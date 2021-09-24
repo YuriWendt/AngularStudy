@@ -1,0 +1,49 @@
+<div class="container">
+    <h2>Class & Style Binding</h2>
+    <section>
+        <div>
+            Selecione um Personagem:
+            <select value="char-select" #classe (change)="0">
+                <option value="Personagem">Personagem</option>
+                <option value="char-select-gojo">Gojo Satoru</option>
+                <option value="char-select-sora">Sora</option>
+                <option value="char-select-vegeta">Vegeta</option>
+            </select>
+        </div>
+
+        <div class="char char-select-gojo" role="char"
+            [style.display]="classe.value == 'char-select-gojo' ? 'block' : 'none'">
+            Voce Selecionou o Gojo Satoru!
+        </div>
+        <div class="char char-select-sora" role="char"
+            [style.display]="classe.value == 'char-select-sora' ? 'block' : 'none'">
+            Voce Selecionou o Sora!
+        </div>
+        <div class="char char-select-vegeta" role="char"
+            [style.display]="classe.value == 'char-select-vegeta' ? 'block' : 'none'">
+            Voce Selecionou o Vegeta-san!
+        </div>
+    </section>
+
+    <div class="characters">
+        <div class="char" role="char" [class.char-select]="classe.value =='char-select-gojo'">
+            <img src="https://i.ibb.co/9HS6tX8/gojo.jpg">
+        </div>
+
+        <div class="char" role="char" [class.char-select]="classe.value =='char-select-sora'">
+            <img src="https://i.ibb.co/7G5n2dK/sora.jpg">
+        </div>
+
+        <div class="char" role="char" [class.char-select]="classe.value =='char-select-vegeta'">
+            <img src="https://i.ibb.co/MMmmfvn/vegeta.png">
+        </div>
+
+
+        <!-- Podemos Fazer da seguinte forma tambem!
+    <div class="char {{ classe.value }}" role="char">
+    -->
+    </div>
+
+
+</div>
+<br><br>

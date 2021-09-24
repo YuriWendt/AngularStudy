@@ -1,0 +1,35 @@
+<div class="container">
+    <h2>Events Binding</h2>
+    <button (click)="clickButton()" class="btn btn-success">
+        Click
+    </button>
+
+    <br><br>
+
+    <input type="text" (keyup)="onKeyUp($event)"/>
+
+    <p>Valor Atual: {{currentValue}}</p>
+
+    <div class="evolution">
+        <h3>Evolução</h3>
+    <img class="img-goku" [src]="imgSrc"
+    (mouseover)="onMouseOver()"
+    (mouseout)="onMouseOut()"
+    >
+
+    <img class="img-goku" [src]="imgSrc2"
+    (click)="clickButton()"
+    (click)="onMouseOut()"
+    >
+
+    <button (click)="buttonEvolution()" class="btn btn-success">
+        Evoluir
+    </button>
+    
+    <button (click)="buttonRevert()" class="btn btn-danger">
+        Reverter
+    </button>
+</div>
+
+    <br><br>
+</div>
