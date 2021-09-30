@@ -1,0 +1,34 @@
+.section-1 {
+        width: 100%;
+
+        .banner-1 {
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('https://33giga.com.br/wp-content/uploads/2020/07/aplicativo-cria-wallpapers-personalizados-de-camisas-de-futebol-veja-como-usar.jpg');
+
+            .title-content {
+                .title {
+                    font-size: 90px;
+                }
+
+                p {
+                    margin-top: -10px;
+                    font-size: 30px;
+                }
+            }
+
+            .logo-title{
+                max-width: 210px;
+            }
+        }
+
+        .banner-2 {
+            opacity: 1;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYjux-R8-DMguUHBkUCB8TqGImW9-YwJRBg&usqp=CAU');
+            .banner-content {
+                float: right;
+                text-align: right;
+            }
+        }
+    }

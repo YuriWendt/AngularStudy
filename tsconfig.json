@@ -6,6 +6,7 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "emitDecoratorMetadata": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
@@ -14,6 +15,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "pages": [
+        "dist/pages/pages",
+        "dist/pages"
+      ]
+    },
     "target": "es2017",
     "module": "es2020",
     "lib": [
